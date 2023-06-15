@@ -1,0 +1,77 @@
+ul{
+    list-style: none;
+    padding: 0;
+    width: 1200px;
+    /* width: auto; */
+    margin: 20px;
+    font-family: sans-serif;
+
+}
+ul > li{
+    background-color: rgb(203, 198, 198);
+    border-radius: 5px;
+    /* padding: 5px; */
+    font-size: 40px;
+}
+ul > li > ul {
+    list-style: none;
+    padding: 0;
+    display: grid ;
+    grid-template-columns: 1fr 2.5fr .3fr .3fr;
+   
+}
+ul > li > ul > li{
+    margin: 0;
+    padding: 20px; 
+    cursor: pointer;
+}
+ul > li > ul > li.del{
+    background-color: rgb(238, 102, 102);
+    cursor: pointer;
+
+   
+}
+ul > li > ul > li.edit{
+    background-color: rgb(87, 87, 241);
+    cursor: pointer;
+
+}
+
+ul > li > ul > li.edit:hover{
+    background-color: blue;
+    color: white;
+}
+ul > li > ul > li.del:hover{
+    background-color: red;
+    color: white;
+}
+
+button  {
+    background-color: rgb(125, 125, 243);
+    font-size: 40px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    margin: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+ 
+    background-color: blue;
+    color: white;
+  
+}
+
+div{
+    margin: 20px;
+    font-size: 50px ;
+    font-family: sans-serif;
+}
+ div > label{}
+ div >  input{
+    font-size: 50px ;
+    font-family: sans-serif;
+    margin-block: 20px;
+    border-radius: 10px;
+}

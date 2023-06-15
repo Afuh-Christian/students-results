@@ -1,0 +1,67 @@
+
+
+<h1>{{student.mat}}</h1>
+<h1>{{student.name}}</h1>
+
+<button class="back" (click) = "goback()">Back</button>
+
+
+<table>
+    <tr>
+        <td>CseCode</td>
+        <td>CA</td>
+        <td>Exam</td>
+        <td>Total</td>
+        <td>Grade</td>
+    </tr>
+
+
+    <ng-container *ngFor="let course of courses">
+    <tr>
+        <td>{{course.name}}</td>
+        <td>{{course.CA}}</td>
+        <td>{{course.exam}}</td>
+        <td>{{course.CA + course.exam}}</td>
+        <td>{{courseGrade(course.CA + course.exam)}}</td>
+        <td><button (click)="delete(course)" class="del" >Del</button></td>
+        <td><button routerLink="/updatecourse/{{course.studentID}}/{{course.id}}"  class="edit">edit</button></td>
+    </tr>
+</ng-container>
+
+</table>
+
+
+
+<!-- <p>Average : {{average(courses)}}</p> -->
+<p>Average : {{averagevalue}}</p>
+
+<br>
+<hr>
+
+<br>
+<br>
+
+<h1>Add new  course</h1>
+
+<div>
+    <div>
+    <label for="name" id="name">Course Title : </label>
+    <input type="text" name="name" id="" [(ngModel)]="name">
+</div>
+<div>
+    <label for="CA" >CA : </label>
+    <input type="number" max="30"  id="CA" [(ngModel)]="CA">
+    </div>
+<div>
+    <label for="Exam">Exam : </label>
+    <input type="number" max="70" id="Exam"[(ngModel)]="exam">
+    </div>
+    <!-- <button (click)="add(name,mat)">Save</button> -->
+    <button (click) = "addcourse(name , CA , exam, student.id)"> Add Course</button>
+</div>
+
+
+
+
+
+

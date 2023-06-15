@@ -1,0 +1,54 @@
+div{
+    margin: 20px;
+    font-size: 50px ;
+    font-family: sans-serif;
+}
+div > div > label{}
+div > div >  input{
+    font-size: 50px ;
+    font-family: sans-serif;
+    margin-block: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+
+
+
+button.back  {
+    background-color: rgb(119, 228, 119);
+    font-size: 40px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    margin: 20px 20px 20px 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button.back:hover{
+ 
+    background-color: green;
+    color: white;
+}
+
+button  {
+    background-color: rgb(125, 125, 243);
+    font-size: 40px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    margin: 20px 20px 20px 700px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+ 
+    background-color: blue;
+    color: white;
+  
+}

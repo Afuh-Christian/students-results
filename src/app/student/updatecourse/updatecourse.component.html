@@ -1,0 +1,20 @@
+<h1>Update {{course.name}}</h1>
+
+<button class="back" (click) = "goback()">  back</button>
+<div>
+    <div>
+    <label for="name" id="name">Course Title : </label>
+    <input type="text" name="name" id="" [(ngModel)]="course.name">
+</div>
+<div>
+    <label for="CA" >CA : </label>
+    <input type="number"  id="CA" [(ngModel)]="course.CA">
+    </div>
+<div>
+    <label for="Exam">Exam : </label>
+    <input type="number" id="Exam"[(ngModel)]="course.exam">
+    </div>
+     <button (click) = "update()"> update Course</button>
+</div>
+
+

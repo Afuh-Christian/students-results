@@ -1,0 +1,65 @@
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+<button routerLink="/add">Add Student</button>
+
+<div>
+    <label for="search-box"> Search student : </label>
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+</div>
+
+<ul>
+
+    <ng-container *ngIf="searchBox.value === '' ">
+        <ng-container *ngFor="let student of students ">
+            <ng-container *ngIf="student.mat && student.name">
+        <li>
+            <ul>
+                <li>
+                    {{student.mat | uppercase}}
+                </li>
+                <li routerLink = "/details/{{student.id}}">
+                    {{student.name | uppercase}} 
+                </li>
+                <li class="del" (click)="delete(student)">del</li>
+                <li class="edit" routerLink="/update/{{student.id}}">edit</li>
+            </ul>
+        </li>
+    </ng-container>
+    </ng-container>
+
+    </ng-container>
+
+
+ 
+   
+        <ng-container *ngFor="let student of students$ | async">
+            <ng-container *ngIf="student.mat && student.name">
+        <li>
+            <ul>
+                <li>
+                    {{student.mat | uppercase}}
+                </li>
+                <li routerLink = "/details/{{student.id}}">
+                    {{student.name | uppercase}} 
+                </li>
+                <li class="del" routerLink="/delete/{{student.id}}">del</li>
+                <li class="edit" routerLink="/update/{{student.id}}">edit</li>
+            </ul>
+        </li>
+    </ng-container>
+    </ng-container>
+
+  
+  
+</ul>
+

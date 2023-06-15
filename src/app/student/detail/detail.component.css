@@ -1,0 +1,129 @@
+
+h1{
+    font-size: 40px;
+    margin: 30px;
+    font-family: sans-serif;
+}
+
+
+
+div{
+    margin: 20px;
+    font-size: 50px ;
+    font-family: sans-serif;
+}
+div > div > label{}
+div > div >  input{
+    font-size: 50px ;
+    font-family: sans-serif;
+    margin-block: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    /* text-align: center; */
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+
+
+
+button  {
+    background-color: rgb(125, 125, 243);
+    font-size: 40px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    margin: 20px 20px 20px 700px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+ 
+    background-color: blue;
+    color: white;  
+}
+
+
+table {
+    font-size: 40px;
+    width: 1000px;
+    height: auto;
+    padding: 0;
+    margin: 10px;
+    font-family: sans-serif;
+    background-color: rgb(198, 194, 194);
+}
+
+table , 
+table > tr , 
+table > tr > td {
+    border: 1px solid rgb(168, 166, 166); 
+    border-collapse: collapse;
+} 
+
+
+
+table > tr > td {
+    padding: 20px;
+
+}
+
+p {
+    margin: 20px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+button.edit {
+    margin: 20px;
+    font-size: 40px;
+    background-color: rgb(129, 129, 224);
+    cursor: pointer;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+button.edit:hover{
+    color: white;
+    background-color: blue;
+}
+
+button.del {
+    margin: 20px;
+    font-size: 40px;
+    background-color: rgb(245, 137, 137);
+    cursor: pointer;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+button.del:hover{
+    color: white;
+    background-color: red;
+}
+
+
+
+button.back {
+    margin: 20px;
+    font-size: 40px;
+    background-color: rgb(152, 238, 152);
+    cursor: pointer;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+button.back:hover{
+    color: white;
+    background-color: green;
+}
+
+
